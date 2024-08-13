@@ -1,0 +1,13 @@
+A = 2
+B = 3
+result = 1
+negative = B < 0
+B = abs(B)
+
+for _ in range(B):
+    result *= A
+
+if negative:
+    result = 1 / result
+
+print(result)
