@@ -1,0 +1,11 @@
+N = int(input())
+i = N
+j = 0
+while i > 0:
+    k = i % 10
+    j += k ** 3
+    i //= 10
+if j == N:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
