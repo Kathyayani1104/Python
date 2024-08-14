@@ -1,7 +1,11 @@
-arr = [1,2,3,4,4,3,3,3]
-unique = []
-for item in arr:
-    if item not in unique:
-        unique += [item]
-for item in unique:
-    print(item)
+n=int(input())
+arr=list(map(int,input().split()))
+l=[]
+for i in range(n):
+    c=0
+    for j in range(n):
+        if arr[i]==arr[j]:
+            c+=1
+    if c==1:
+        l.append(arr[i])
+print(" ".join(map(str,l)))
